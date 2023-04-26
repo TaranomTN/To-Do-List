@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(130, 107, 128);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(65, 25, 73);
+    margin: 10px;
+}
+
+.ToDoList{
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    background-color: rgb(169, 161, 176);
+    border-radius: 10px;
+}
+
+.box-enter{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    gap: 20px;
+}
+
+input{
+    
+    padding: 20px;
+    /* color: black; */
+    font-weight: 500;
+    border-radius: 5px;
+    border: 2px solid plum;
+    box-shadow: 2px 2px 2px 2px rgb(169, 161, 176);
+    font-size: 16px;
+}
+
+input:focus{
+    outline: none;
+    border-color: purple;
+}
+
+.add{
+    
+    font-weight: 500;
+    font-size: 16px;
+    background-color: rgb(71, 43, 71);
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.add.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.OK-Del{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.item{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:10px 10px 30px rgba(0,0,0,0.3) ;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    
+}
+
+.down{
+    text-decoration: line-through;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(52, 28, 52);
+    letter-spacing: 1px;
+}
+
+.btnDown , .btnDel{
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(71, 43, 71) ;
+    color: white;
+    cursor: pointer;
+}
